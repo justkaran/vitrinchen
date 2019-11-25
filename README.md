@@ -1,2 +1,3 @@
 # vitrinchen
-Vitrinchen's Site
+Landingpage of the Vitrinchen
+Just a simple Landingpage
