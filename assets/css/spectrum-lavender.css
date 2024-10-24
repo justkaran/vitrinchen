@@ -2024,6 +2024,26 @@ ul#filters li button.btn-link.active {
     margin: 0 15px;
 }
 
+#services-1-carousel {
+    display: flex;
+    justify-content: center;
+    gap: 30px; /* Optional: Adjust the space between the items */
+    list-style-type: none; /* Remove bullets from the list */
+    padding: 0;
+    margin: 0;
+}
+
+#services-1-carousel .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* If you want to apply a background */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 5px; /* Optional: adds rounded corners */
+}
+
+
+
 .services-1 .icon-rocket:before {
     content: "\f135";
 }

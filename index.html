@@ -32,11 +32,11 @@
 
     <!-- Spectrum CSS -->
     <!-- Note: spectrum.css is the default blue theme. To use another theme, uncomment the one you want and delete the rest, including the default spectrum.css! -->
-    <link href="assets/css/spectrum-yellow.css" rel="stylesheet">
+    <!-- <link href="assets/css/spectrum-yellow.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/spectrum-aqua.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/spectrum-coffee.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/spectrum-coral.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/spectrum-lavender.css" rel="stylesheet"> -->
+    <link href="assets/css/spectrum-lavender.css" rel="stylesheet">
     <!-- <link href="assets/css/spectrum-olive.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/spectrum-orange.css" rel="stylesheet"> -->
     <!-- <link href="assets/css/spectrum-peach.css" rel="stylesheet"> -->
@@ -84,9 +84,6 @@
                             <a href="#services">Unser Service</a>
                         </li>
                         <li class="page-scroll">
-                            <a href="#kollektion">Neue Kollektion</a>
-                        </li>
-                        <li class="page-scroll">
                             <a href="#contact">Kontakt</a>
                         </li>
                         <li class="page-scroll">
@@ -99,86 +96,106 @@
             <!-- /.container -->
         </nav>
 
-        <header class="intro-img intro-dark-bg" style="background-image: url(https://cdn.pixabay.com/photo/2017/01/27/21/24/wintry-2014228_1280.jpg" data-stellar-background-ratio="0.5">
-            <div class="overlay"></div>
-            <div class="intro-body" data-scrollreveal="move 0">
-                <div class="container">
-                    <div class="intro-welcome">Wenn es kalt wird, braucht es eine Freundin! <br> Ihr Vitrinchen</div>
-                    <br>
-                    <!--<h1 class="brand-heading"><span class="text-primary">Vitrinchen</span></h1>-->
-                    <div class="page-scroll" data-scrollreveal="enter bottom after .6s">
-                        <a href="#services" class="btn btn-scroll-light sink">
-                            <i class="fa fa-angle-double-down"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-       <!--<section id="about" class="about-2">
+        <header class="intro-img intro-dark-bg" style="
+        background-image: url('assets/img/xmas5.jpeg');
+        background-size: cover;
+        background-position: center center;
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    " data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="intro-body" data-scrollreveal="move 0">
             <div class="container">
-                <div class="row" data-scrollreveal="enter left">
-                    <div class="col-lg-4 col-lg-offset-1">
-                        <img src="assets/img/demo-bgs/header.png" class="img-circle img-responsive img-centered dark-faded-border" alt="">
-                    </div>
-                    <div class="col-lg-5 text-center" data-scrollreveal="enter right">
-                        <h2>Über uns</h2>
-                        <hr class="primary">
-                        <p>Vitrinchen - Ihr Modehaus!</p>
-                    </div>
+                <div class="intro-welcome">Wenn es kalt wird, braucht es eine Freundin! <br> Ihr Vitrinchen</div>
+                <br>
+                <div class="page-scroll" data-scrollreveal="enter bottom after .6s">
+                    <a href="#services" class="btn btn-scroll-light sink">
+                        <i class="fa fa-angle-double-down"></i>
+                    </a>
                 </div>
             </div>
-        </section>-->
-
+        </div>
+    </header>
+    
+    <style>
+        .intro-welcome {
+            color: white;
+            font-size: 2rem; /* Default for larger screens */
+            text-align: center;
+        }
+    
+        /* Fix to ensure background covers entire area */
+        header.intro-img {
+            min-height: 100vh; /* Ensures it covers full height */
+        }
+    
+        /* Mobile view adjustments */
+        @media (max-width: 768px) {
+            .intro-welcome {
+                font-size: 1.5rem; /* Slightly smaller for mobile */
+                padding: 0 10px; /* Add some padding for readability */
+            }
+    
+            header.intro-img {
+                background-size: cover; /* Ensure full background coverage */
+                background-position: center;
+            }
+    
+            .intro-body {
+                padding-top: 10%; /* Adjust padding to fit content better */
+            }
+        }
+    
+        /* Remove grey area and cover full width/height */
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    
+    
         <section id="services" class="services-1">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2 text-center" data-scrollreveal="move 0">
                         <h2>Unser Service für Sie</h2>
-                        <hr class="primary" style="background: rgba(171, 134, 72, 1)">
+                        <hr class="primary" style="background: rgba(171, 134, 72, 1); margin-bottom: 40px;">
                     </div>
                     <div class="col-lg-12 text-center" data-scrollreveal="enter bottom">
-                        <ul id="services-1-carousel" class="icon-effect list-inline">
-                           <li class="item">
-                                <span class="icon"></span>
-                                <h4>Beratung <br> (in den Öffnungszeiten) </h4>
+                        <ul id="services-1-carousel" class="icon-effect list-inline" style="display: flex; justify-content: space-around; align-items: center; gap: 50px; list-style-type: none; padding: 0; margin: 0 auto; width: 80%;">
+                            <li class="item" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                                <span style="display: block; width: 150px; height: 150px; background-color: #6a0dad; border-radius: 50%;"></span>
+                                <h4 style="color: #333; margin-top: 15px;">Individuelle Beratung <br> (nach Termin)</h4>
                             </li>
-                            <li class="item">
-                                <span class="icon"></span>
-                                <h4>Individuelle Beratung <br> (nach Termin) </h4>
+                            <li class="item" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                                <span style="display: block; width: 150px; height: 150px; background-color: #6a0dad; border-radius: 50%;"></span>
+                                <h4 style="color: #333; margin-top: 15px;">Bestellung auf Wunsch</h4>
                             </li>
-                            <li class="item">
-                                <span class="icon"></span>
-                                <h4>Bestellung auf Wunsch</h4>
+                            <li class="item" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                                <span style="display: block; width: 150px; height: 150px; background-color: #6a0dad; border-radius: 50%;"></span>
+                                <h4 style="color: #333; margin-top: 15px;">Verantwortungsvoller Handel</h4>
                             </li>
-                            <li class="item">
-                                <span class="icon"></span>
-                                <h4>Verantwortungsvoller Handel</h4>
-                            </li>
-                          <!--< <li class="item">
-                                <span class="icon icon-pencil"></span>
-                                <h3>Stets neue Designer</h3>
-                            </li>-->
-                            <!--<li class="item">
-                                <span class="icon icon-wrench"></span>
-                                <h3>Maintenance</h3>
-                            </li>
-                            <li class="item">
-                                <span class="icon icon-rocket"></span>
-                                <h3>Launch Timelines</h3>
-                            </li>
-                            <li class="item">
-                                <span class="icon icon-flag"></span>
-                                <h3>Custom Branding</h3>-->
+                            <li class="item" style="display: flex; flex-direction: column; align-items: center; text-align: center;">
+                                <span style="display: block; width: 150px; height: 150px; background-color: #6a0dad; border-radius: 50%;"></span>
+                                <h4 style="color: #333; margin-top: 15px;">Gemütliche Atmosphäre</h4>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
-
+        
+        
           <aside class="bg-parallax-dark nopadding" style="background-image: url(assets/img/demo-bgs/fashion.jpg);" data-stellar-background-ratio="0.5">
-            <div class="aside-overlay" style="background-color: rgba(171, 134, 72, 1);">
+            <div class="aside-overlay" style="background-color: rgb(118, 72, 171);">
                 <div class="container">
                     <div class="row text-center">
                         <div class="col-lg-8 col-lg-offset-2">
@@ -192,20 +209,6 @@ Emma Watson</p>
                 </div>
             </div>
         </aside>
-<!-- Video Melissa Section -->
-<div class="melissa" id="kollektion">
-  <div class="row">
-    <div class="col-lg-12 text-center">
-                            <h2>Trixi Schober Kollektion Herbst / Winter 2022</h2><br>
-      <div>
-        <a href="https://www.trixischober.de/collections/fall22/"><img src="https://cdn.pixabay.com/photo/2016/10/21/14/46/fox-1758183_1280.jpg" width="100%" height="400px" frameborder="0" scrolling="no" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></a>
-        </iframe>
-      </div>
-    </div>
-  </div>
-</div>
-
-
         <footer class="footer-2 bg-dark">
             <div class="container">
                 <div class="row">
@@ -220,21 +223,6 @@ Außerhalb der Öffnungszeiten gerne nach telefonischer Vereinbarung.
                         <p class="small">Copyright &copy; 2022 - Vitrinchen. Die Rechte an den Bildern und am Video liegen beim jeweiligen Urheber. Wir erheben keine Daten von Ihnen. </p>
                     </div>
                     <div class="col-md-3 col-md-offset-1">
-                        <!--<h3 class="script">Find me!</h3>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="#" class="btn btn-social-light btn-facebook"><i class="fa fa-fw fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-social-light btn-twitter"><i class="fa fa-fw fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-social-light btn-dribbble"><i class="fa fa-fw fa-dribbble"></i></a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-social-light btn-google-plus"><i class="fa fa-fw fa-google-plus"></i></a>
-                            </li>
-                        </ul>-->
                         <br>
                         <address id=#contact>
                         Impressum und Kontaktadresse<br>
@@ -252,59 +240,6 @@ Außerhalb der Öffnungszeiten gerne nach telefonischer Vereinbarung.
         </footer>
 
     </div>
-
-    <!-- Standard Portfolio Modal - Images and Text -->
-    <!--<div id="portfolio-modal-1" class="portfolio-modal modal fade" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="row first">
-                    <div class="col-lg-12">
-                        <h2 class="page-header">Project Name</h2>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8">
-                        <div id="project-details-carousel" class="owl-carousel owl-theme">
-                            <div class="item">
-                                <img src="assets/img/demo-portfolio/10.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="assets/img/demo-portfolio/11.jpg" alt="">
-                            </div>
-                            <div class="item">
-                                <img src="assets/img/demo-portfolio/12.jpg" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <h3>Project Description:</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, et, ea, accusantium reprehenderit aliquam numquam fuga natus fugiat odit distinctio illo at unde.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, iusto molestiae possimus sint dignissimos! Laudantium, dolore, vel, sint, labore optio perferendis illo dolorum similique soluta eum cupiditate assumenda consequatur maiores.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-8">
-                        <h3>Project Details:</h3>
-                        <ul class="list-unstyled project-details">
-                            <li>
-                                <strong>Client:</strong>Lorem Ipsum</li>
-                            <li>
-                                <strong>Services:</strong>Web Design, Photography</li>
-                            <li>
-                                <strong>Date:</strong>January 2014</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Standard Portfolio Modal - Video and Text -->
 
 
     <!-- Core JavaScript Files -->
